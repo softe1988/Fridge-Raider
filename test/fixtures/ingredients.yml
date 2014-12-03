@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  protein: MyString
+  side: MyString
+  sauce_id: 1
+  cuisine_id: 1
+
+two:
+  name: MyString
+  protein: MyString
+  side: MyString
+  sauce_id: 1
+  cuisine_id: 1

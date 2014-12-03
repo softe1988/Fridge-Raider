@@ -1,0 +1,25 @@
+<%= form_for(@sauce) do |f| %>
+  <% if @sauce.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sauce.errors.count, "error") %> prohibited this sauce from being saved:</h2>
+
+      <ul>
+      <% @sauce.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ingredients %><br>
+    <%= f.text_field :ingredients %>
+  </div>
+  <div class="field">
+    <%= f.label :cuisine_id %><br>
+    <%= f.number_field :cuisine_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
