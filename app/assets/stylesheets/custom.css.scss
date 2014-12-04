@@ -1,6 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-	padding-top: 75px;
+.body {
+	padding-bottom: 75px;
+	margin-bottom: 10px;
+	font-family: 'Pacifico', cursive;
 }
+
+.navbar{
+	background-color: #444C49;
+	font-family: 'Hammersmith One', sans-serif;
+	padding: 20px;
+}	
