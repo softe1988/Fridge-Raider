@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   
   # setting home page to Cuisines Index page
-  root 'cuisines#index'
-
-  
+  root to: 'ingredients#index'
 
   
   resources :cooking_styles
