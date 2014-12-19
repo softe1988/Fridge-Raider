@@ -7,28 +7,32 @@
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
     <link rel="stylesheet" href="css/foundation-icons.css" />
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
-    <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag    "application" %>
+      <%= javascript_include_tag "vendor/modernizr" %>
+      <%= csrf_meta_tags %>
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   </head>
 
   <body>
    <%= render 'shared/navigation' %>
 
    <p class="navbar-text pull-right">
-<% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<% end %>
-    <%= yield %>
-
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%= javascript_include_tag "application" %>
+      <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.email %></strong>.
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+      <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+        <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+      <% end %>
+      <%= yield %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+     <!-- intial javascript located in static pages.js.coffee file -->
+     
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
   </body>
 </html>
