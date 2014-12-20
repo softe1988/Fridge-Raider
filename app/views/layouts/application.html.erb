@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
-    <link rel="stylesheet" href="css/foundation-icons.css" />
-
+    
       <%= stylesheet_link_tag    "application" %>
       <%= javascript_include_tag "vendor/modernizr" %>
       <%= csrf_meta_tags %>
     
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   </head>
 
   <body>
@@ -31,8 +29,6 @@
         <p class="alert"><%= alert %></p>
      <!-- intial javascript located in static pages.js.coffee file -->
      
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
+        
   </body>
 </html>

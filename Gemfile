@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# image carousel gem
+gem 'owlcarousel-rails', '~> 1.1.3.3'
+
 gem 'devise', '~> 3.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
