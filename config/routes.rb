@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
   
   devise_for :users
+ 
+
   get 'static_pages/home'
 
   get 'static_pages/about'
+
+
+  
 
   # setting home page to Cuisines Index page
  # rails generate controller StaticPages home about 
