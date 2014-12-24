@@ -1,4 +1,4 @@
-<h1>Listing cooking_styles</h1>
+<h1>Cooking Style Choice</h1>
 
 <table>
   <thead>
@@ -13,7 +13,7 @@
     <% @cooking_styles.each do |cooking_style| %>
       <tr>
         <td><%= cooking_style.name %></td>
-        <td><%= cooking_style.cuisine_id %></td>
+        <td><%= cooking_style.cuisine.name %></td>
         <td><%= link_to 'Show', cooking_style %></td>
         <td><%= link_to 'Edit', edit_cooking_style_path(cooking_style) %></td>
         <td><%= link_to 'Destroy', cooking_style, method: :delete, data: { confirm: 'Are you sure?' } %></td>
