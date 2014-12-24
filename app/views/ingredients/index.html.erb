@@ -1,4 +1,4 @@
-<h1>Listing ingredients</h1>
+<h1>Meal Builder</h1>
 
 <table>
   <thead>
@@ -18,7 +18,7 @@
         <td><%= ingredient.name %></td>
         <td><%= ingredient.protein %></td>
         <td><%= ingredient.side %></td>
-        <td><%= ingredient.sauce_id %></td>
+        <td><%= ingredient.sauce.name %></td>
         <td><%= ingredient.cuisine.name %></td>
         <td><%= link_to 'Show', ingredient %></td>
         <td><%= link_to 'Edit', edit_ingredient_path(ingredient) %></td>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Ingredient', new_ingredient_path %>
+<%= link_to 'New Meal', new_ingredient_path %>

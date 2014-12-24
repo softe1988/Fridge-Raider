@@ -5,6 +5,7 @@ class IngredientsController < ApplicationController
   # GET /ingredients.json
   def index
     @ingredients = Ingredient.all
+    
   end
 
   # GET /ingredients/1
@@ -15,6 +16,8 @@ class IngredientsController < ApplicationController
   # GET /ingredients/new
   def new
     @ingredient = Ingredient.new
+   
+
   end
 
   # GET /ingredients/1/edit
@@ -25,6 +28,7 @@ class IngredientsController < ApplicationController
   # POST /ingredients.json
   def create
     @ingredient = Ingredient.new(ingredient_params)
+    @protein = Protein.all
 
     respond_to do |format|
       if @ingredient.save

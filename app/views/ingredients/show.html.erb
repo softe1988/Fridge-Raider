@@ -22,7 +22,7 @@
 
 <p>
   <strong>Cuisine:</strong>
-  <%= @ingredient.cuisine_id %>
+  <%= @ingredient.cuisine.name %>
 </p>
 
 <%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |

@@ -69,6 +69,6 @@ class SaucesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sauce_params
-      params.require(:sauce).permit(:ingredients, :cuisine_id)
+      params.require(:sauce).permit(:name, :ingredients, :cuisine_id)
     end
 end

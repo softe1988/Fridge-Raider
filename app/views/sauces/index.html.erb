@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th>Ingredients</th>
       <th>Cuisine</th>
       <th colspan="3"></th>
@@ -12,6 +13,7 @@
   <tbody>
     <% @sauces.each do |sauce| %>
       <tr>
+        <td><%= sauce.name %></td>
         <td><%= sauce.ingredients %></td>
         <td><%= sauce.cuisine.name %></td>
         <td><%= link_to 'Show', sauce %></td>
