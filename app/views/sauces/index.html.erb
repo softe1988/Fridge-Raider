@@ -13,7 +13,7 @@
     <% @sauces.each do |sauce| %>
       <tr>
         <td><%= sauce.ingredients %></td>
-        <td><%= sauce.cuisine_id %></td>
+        <td><%= sauce.cuisine.name %></td>
         <td><%= link_to 'Show', sauce %></td>
         <td><%= link_to 'Edit', edit_sauce_path(sauce) %></td>
         <td><%= link_to 'Destroy', sauce, method: :delete, data: { confirm: 'Are you sure?' } %></td>
