@@ -28,7 +28,7 @@ class IngredientsController < ApplicationController
   # POST /ingredients.json
   def create
     @ingredient = Ingredient.new(ingredient_params)
-    @protein = Protein.all
+    
 
     respond_to do |format|
       if @ingredient.save
