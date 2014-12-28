@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
-  devise_for :users
  
+  devise_for :users
   post '/cooking_styles/new' => 'cooking_styles#new '
   
   get 'static_pages/home'
